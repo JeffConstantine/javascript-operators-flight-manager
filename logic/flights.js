@@ -7,7 +7,7 @@ function Flights() {
         } else {
             flights = Math.floor(passengers/capacity) + 1;
         }
-        return flights; 
+        return {calculateNumberOfFlights}; 
     }          
     
 }
