@@ -5,7 +5,7 @@ function Flights() {
         if (passengerNo % flightCapacity == 0) {
             flights = passengerNo/flightCapacity;
         } else {
-            flights = Math.floor(passengers/capacity) + 1;
+            flights = Math.floor(passengerNo/flightCapacity) + 1;
         }
         return flights; 
     }          
