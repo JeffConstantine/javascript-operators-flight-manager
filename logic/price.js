@@ -37,21 +37,12 @@ function Prices() {
     return finalPrice.toFixed(2);
   }
 
-  function calculateTotalFinalPrice(
-    seats,
-    passengerType,
-    flightType,
-    basePrice
-  ) {
+  function calculateTotalFinalPrice(seats, passengerType, flightType, basePrice) {
     return seats * calculateDefaultFinalPrice(basePrice, passengerType, flightType);
    
   }
 
-  return {
-    calculateFinalPrice,
-    calculateDefaultFinalPrice,
-    calculateTotalFinalPrice
-  };
+  return {calculateFinalPrice, calculateDefaultFinalPrice, calculateTotalFinalPrice};
 }
 
 module.exports = Prices();
