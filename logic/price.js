@@ -18,20 +18,16 @@ function Prices() {
     let finalPrice = basePrice;
 
     switch (passengerType.toUpperCase()) {
-      case "Regular":
-        finalPrice *= 0.95;
+      case "Regular": finalPrice *= 0.95;
         break;
-      case "VIP":
-        finalPrice *= 1.05;
+      case "VIP": finalPrice *= 1.05;
         break;
     }
 
     switch (flightType.toUpperCase()) {
-      case "ECONOMY":
-        finalPrice *= 0.97;
+      case "ECONOMY": finalPrice *= 0.97;
         break;
-      case "BUSINESS":
-        finalPrice *= 1.1;
+      case "BUSINESS": finalPrice *= 1.1;
         break;
     }
     return finalPrice.toFixed(2);
