@@ -43,9 +43,8 @@ function Prices() {
     flightType,
     basePrice
   ) {
-    return (
-      seats * calculateDefaultFinalPrice(basePrice, passengerType, flightType)
-    );
+    return seats * calculateDefaultFinalPrice(basePrice, passengerType, flightType);
+   
   }
 
   return {
