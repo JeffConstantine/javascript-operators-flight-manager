@@ -49,9 +49,9 @@ function Prices() {
   }
 
   return {
-    calculateFinalPrice,
-    calculateDefaultFinalPrice,
-    calculateTotalFinalPrice
+    calculateFinalPrice(),
+    calculateDefaultFinalPrice(),
+    calculateTotalFinalPrice()
   };
 }
 
