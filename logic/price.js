@@ -51,7 +51,7 @@ function Prices() {
   return {
     calculateFinalPrice,
     calculateDefaultFinalPrice,
-    calculateTotalFinalPrice,
+    calculateTotalFinalPrice
   };
 }
 
